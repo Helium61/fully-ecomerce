@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* HeadphoneCategories.css */
+
+.image-container {
+    position: relative;
+  }
+  
+  .quick-view-btn {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .quick-view-btn {
+    opacity: 1;
+  }
+/* index.css */
+
+.image-container {
+    position: relative;
+  }
+  
+  .quick-view-btn {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .quick-view-btn {
+    opacity: 1;
+  }
+  
+  .quick-view-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust the width as needed */
+    height: 65%;
+    max-width: 800px; /* Add a maximum width to prevent the box from becoming too wide */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000; /* Ensure the overlay is above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quick-view-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .quick-view-container {
+    display: flex;
+  }
+  
+  .quick-view-image {
+    width: 50%;
+  }
+  
+  .quick-view-description {
+    width: 50%;
+    padding-left: 20px; /* Add spacing between image and description */
+  }
+  .sidebar {
+    transition: transform 0.3s ease-in-out;
+  }
+ 
